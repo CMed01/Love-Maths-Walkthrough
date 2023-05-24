@@ -22,10 +22,18 @@
 
     <div class="game-area">
         <div class="controls-area">
-            <button class="btn btn--big btn--green"><i class="fas fa-plus"></i></button>
-            <button class="btn btn--big btn--blue"><i class="fas fa-minus"></i></button>
-            <button class="btn btn--big btn--orange"><i class="fas fa-times"></i></button>
-            <button class="btn btn--big btn--red"><i class="fas fa-divide"></i></button>
+            <button data-type="addition" class="btn btn--big btn--green">
+                <i class="fas fa-plus"></i>
+            </button>
+            <button data-type="subtract" class="btn btn--big btn--blue">
+                <i class="fas fa-minus"></i>
+            </button>
+            <button data-type="multiply" class="btn btn--big btn--orange">
+                <i class="fas fa-times"></i>
+            </button>
+            <button data-type="division" class="btn btn--big btn--red">
+                <i class="fas fa-divide"></i>
+            </button>
         </div>
         <div class="question-area">
             <span id="operand1">0</span>
@@ -35,7 +43,7 @@
             <p class="answer-message">Enter Answer:</p>
             <input class="answer-box" type="number">
         </div>
-        <button class="btn btn--gray">Submit Answer</button>
+        <button data-type="submit" class="btn btn--gray">Submit Answer</button>
     </div>
 
     <div class="score-area">
@@ -43,7 +51,7 @@
         <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
     </div>
 
-    
+
 
 
     <!-- Adding the script element at the end of the body will halp speed up loading time and allow the rest of the
