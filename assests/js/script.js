@@ -20,12 +20,21 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 })
 
+//  Doc strings are used to describe function, they should go above where the function name is declared.
+/** 
+ * The maain game "loop", called when the script is first loaded
+ * and after the user's answer has been processed
+ */
 function runGame() {
-
+    // This creates two random numbers between 1 and 25
+    let num1 = Math.floor(Math.random() * 25) +1;
+    let num2 = Math.floor(Math.random() * 25) +1;
+    
+    document.getElementById("operand1")
 }
 
 function checkAnswer() {
-
+    
 }
 
 function calculateCorrectAnswer() {
